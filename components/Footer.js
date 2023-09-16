@@ -1,7 +1,6 @@
-import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
-export function footer() {
+export default function Footer() {
   return (
       <footer>
         <a
@@ -9,7 +8,7 @@ export function footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          テストテスト　Powered by{' '}
           <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
         </a>
       </footer>
