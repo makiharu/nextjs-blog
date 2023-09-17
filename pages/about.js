@@ -2,8 +2,9 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Footer from '../components/Footer';
 import Links from '../components/Links';
+import Headline from '../components/Headline';
 
-export default function About() {
+export default function About(props) {
   return (
     <div className={styles.container}>
       <Head>
@@ -12,14 +13,7 @@ export default function About() {
       </Head>
 
       <main>
-        <h1 className={styles.title}>
-          About page
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code>pages/about.js</code>
-        </p>
-
+        <Headline page="about"/>
         <Links />
       </main>
 
