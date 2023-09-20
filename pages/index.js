@@ -1,9 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Footer from '../components/Footer';
-import Links from '../components/Links';
 import Main from '../components/Main';
-import HeadLine from '../components/Headline';
 import { useEffect } from 'react';
 
 export default function Home() {
