@@ -1,5 +1,5 @@
 
-import styles from './Link.module.css';
+import styles from 'src/components/Links/Links.module.css';
 
 const ITEMS = [
   {

@@ -1,4 +1,6 @@
-import styles from './Footer.module.css';
+// 絶対パスから相対パスへ
+// import styles from './Footer.module.css';
+import styles from 'src/components/Footer/Footer.module.css';
 
 export default function Footer() {
   return (

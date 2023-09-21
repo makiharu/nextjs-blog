@@ -1,4 +1,5 @@
-import styles from './Headline.module.css';
+// import styles from './Headline.module.css';
+import styles from 'src/components/Headline/Headline.module.css';
 
 export default function Headline(props) {
   console.log(props);
@@ -8,7 +9,6 @@ export default function Headline(props) {
       
       <p className={styles.description}>
           Get started by editing
-          {/* {props.code} */}
           {props.children}
       </p>
 
