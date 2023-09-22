@@ -11,7 +11,6 @@ export default function Header() {
         <Link href="/about" className={styles.anchor}>
           About
         </Link>
-        <button>ボタン</button>
       </header>
   );
 }
