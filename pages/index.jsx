@@ -6,16 +6,14 @@ import Main from '../src/components/Main';
 import { useEffect } from 'react';
 
 export default function Home() {
-  useEffect(() => {
-    console.log('マウント時');
-    // document.body.style.backgroundColor ='lightgreen';
 
-    // アンマウント時の処理
-    return () => {
-      console.log('アンマウント時');
-      // document.body.style.backgroundColor ='';
-    }
-  }, [])
+  const foo = "hoge";
+  function handleClick(e) {
+    // console.log(e);
+    console.log("e.target.href" + e.target.href);
+    alert(foo);
+    e.preventDefault();
+  }
 
   return (
     
@@ -25,6 +23,9 @@ export default function Home() {
         <title>Index Page</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <a href="/about" onClick={handleClick }
+      >
+        ボタンです</a>
 
       <Main page="index"></Main>
       <Footer />
