@@ -9,11 +9,19 @@ export default function Home() {
 
   const foo = "hoge";
   function handleClick(e) {
-    // console.log(e);
     console.log("e.target.href" + e.target.href);
     alert(foo);
     e.preventDefault();
   }
+
+  useEffect(() => {
+    alert('マウント時');
+    document.body.style.backgroundColor = '';
+    return () => {
+      alert('アンマウント時');
+      document.body.style.backgroundColor = 'lightgreen';
+    }
+  }, [])
 
   return (
     
