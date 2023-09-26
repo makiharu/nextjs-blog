@@ -9,6 +9,10 @@ export default function palyEx() {
         setCount(count+1);
     }
 
+    useEffect(() => {
+        console.log('hello Hooks');
+    }, [count]);
+
     // カウントが3の倍数になった時にアホになる
     useEffect(() => {
         if(count % 3 === 0 && count !== 0) {
@@ -23,9 +27,12 @@ export default function palyEx() {
 
     return (
         <div className="palyEx">
-            <h1>useState</h1>
+            <h1>useState, useEffect</h1>
             <button onClick={handleClick}>ボタン</button>
             <p>{ count }</p>
+            <hr />
+            <h1>useContext</h1>
+            
         </div>
     )
 }
