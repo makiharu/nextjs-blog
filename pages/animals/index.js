@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from 'src/components/Main/Main.module.css';
 
+
 export default function AnimalList() {
 
     return (
@@ -12,10 +13,10 @@ export default function AnimalList() {
                         <Link href="/animals/cat">
                             <p>cat</p>
                         </Link>
-                        <Link href="./dog">
-                            <p>dog</p>
+                        <Link href="/animals/dog">
+                           <p>dog</p>
                         </Link>
-                        <Link href="./bird">
+                        <Link href="/animals/bird">
                             <p>bird</p>
                         </Link>
                     </li>
