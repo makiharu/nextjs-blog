@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import InfoContext from 'src/components/infoContext';
+import App from 'src/components/App';
 
-export default function palyEx() {
+export default function Play() {
     // let count = 0;
     let [count, setCount] = useState(0);
+    const info = useContext(InfoContext);
 
     const handleClick = () => {
         console.log(count);
@@ -32,7 +35,11 @@ export default function palyEx() {
             <p>{ count }</p>
             <hr />
             <h1>useContext</h1>
-            
+            {/* <p>{info.name}</p>
+            <p>{info.type}</p> */}
+
+            <App />
+
         </div>
     )
 }
